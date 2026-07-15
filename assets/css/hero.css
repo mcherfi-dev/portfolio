@@ -150,22 +150,6 @@
 .panel-key { color: var(--faint); }
 .panel-val { color: var(--text); text-align: right; }
 .panel-val .b { color: var(--accent); }
-.panel-val.is-ok {
-  color: var(--live);
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  justify-content: flex-end;
-}
-.panel-val.is-ok::before {
-  content: '';
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--live);
-  box-shadow: 0 0 8px var(--live);
-}
-
 .ticker {
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
