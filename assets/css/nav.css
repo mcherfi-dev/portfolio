@@ -1,0 +1,99 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: color-mix(in srgb, var(--ink) 72%, transparent);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.35s var(--ease), background 0.35s var(--ease);
+}
+.nav.is-scrolled { border-bottom-color: var(--line); }
+
+.nav-inner {
+  max-width: var(--wrap);
+  margin: 0 auto;
+  padding: 16px var(--gutter);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--mono);
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  display: inline-flex;
+  align-items: center;
+}
+.logo .bracket {
+  color: var(--accent);
+  display: inline-block;
+  transition: transform 0.3s var(--ease);
+}
+.logo:hover .bracket:first-child { transform: translateX(-2px); }
+.logo:hover .bracket:last-child { transform: translateX(2px); }
+
+.nav-links { display: flex; gap: 30px; align-items: center; }
+.nav-links a {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--dim);
+  letter-spacing: -0.01em;
+  transition: color 0.2s;
+  position: relative;
+}
+.nav-links a:not(.nav-cta)::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 1px;
+  width: 0;
+  background: var(--accent);
+  transition: width 0.28s var(--ease);
+}
+.nav-links a:not(.nav-cta):hover::after,
+.nav-links a.is-active::after { width: 100%; }
+.nav-links a:hover,
+.nav-links a.is-active { color: var(--text); }
+
+.nav-cta {
+  border: 1px solid var(--line-2);
+  border-radius: 7px;
+  padding: 7px 15px;
+  color: var(--text);
+  transition: border-color 0.2s, background 0.2s;
+}
+.nav-cta:hover { border-color: var(--accent); background: var(--accent-glow); }
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+  padding: 4px;
+}
+
+@media (max-width: 640px) {
+  .nav-links { display: none; }
+  .nav-links.is-open {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 22px var(--gutter);
+    background: var(--ink-2);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav-toggle { display: block; }
+}

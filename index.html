@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohamed Cherfi · Développeur Full Stack</title>
+<meta name="description" content="Mohamed Cherfi, développeur full stack. Master 2 Génie de l'Informatique Logicielle à Rouen. Alternance à partir de septembre 2026.">
+<meta name="author" content="Mohamed Cherfi">
+<meta name="theme-color" content="#070b11">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mohamed Cherfi · Développeur Full Stack">
+<meta property="og:description" content="Back end, front end, données et déploiement. Alternance à partir de septembre 2026.">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23070b11'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='15' font-weight='700' fill='%235b9dff' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;450;500;600&display=swap">
+<link rel="stylesheet" href="assets/css/main.css">
+
+<script type="module" src="assets/js/main.js"></script>
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+<div class="progress" data-progress aria-hidden="true"></div>
+
+<nav class="nav" data-nav aria-label="Navigation principale">
+  <div class="nav-inner">
+    <a href="#top" class="logo" aria-label="Retour en haut de page">
+      <span class="bracket">{</span>MC<span class="bracket">}</span>
+    </a>
+    <div class="nav-links" data-nav-links>
+      <a href="#about">Profil</a>
+      <a href="#work">Projets</a>
+      <a href="#stack">Compétences</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </div>
+    <button class="nav-toggle" data-nav-toggle type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <canvas class="hero-canvas" data-node-graph aria-hidden="true"></canvas>
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="hero-inner">
+      <div>
+        <p class="kicker">
+          <span class="live-dot" aria-hidden="true"></span>
+          Disponible
+        </p>
+        <h1 class="hero-title">
+          <span class="l"><span>Développeur</span></span>
+          <span class="l"><span class="accent">full stack.</span></span>
+        </h1>
+        <p class="hero-sub">
+          Je conçois des logiciels et des applications web <strong>fiables, évolutifs
+          et faciles à maintenir</strong>. De l'architecture logicielle au déploiement, j'accorde une
+          attention particulière à la qualité du code, aux performances, à la sécurité et à
+          l'expérience utilisateur, afin de créer des solutions durables.
+        </p>
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-primary" data-magnetic>
+            Voir mes projets
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-ghost" data-magnetic>Me contacter</a>
+        </div>
+      </div>
+
+      <aside class="panel" aria-label="Résumé de la recherche">
+        <div class="panel-bar">
+          <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="fname">profil.json</span>
+        </div>
+        <dl class="panel-body">
+          <div class="panel-row"><dt class="panel-key">nom</dt><dd class="panel-val">Mohamed Cherfi</dd></div>
+          <div class="panel-row"><dt class="panel-key">formation</dt><dd class="panel-val">Master 2 · Génie de l'Informatique Logicielle</dd></div>
+          <div class="panel-row"><dt class="panel-key">recherche</dt><dd class="panel-val">Alternance · Stage</dd></div>
+          <div class="panel-row"><dt class="panel-key">début</dt><dd class="panel-val"><span class="b">Sept.</span> 2026</dd></div>
+          <div class="panel-row"><dt class="panel-key">localisation</dt><dd class="panel-val">Rouen (76)</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </div>
+</header>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span class="ticker-group"><i>Java</i><i>Spring Boot</i><i>Spring AI</i><i>React</i><i>Angular</i><i>C# / .NET</i><i>Symfony</i><i>PostgreSQL</i><i>Docker</i><i>Keycloak</i><i>GitLab CI/CD</i><i>SonarQube</i><i>Microservices</i></span>
+    <span class="ticker-group"><i>Java</i><i>Spring Boot</i><i>Spring AI</i><i>React</i><i>Angular</i><i>C# / .NET</i><i>Symfony</i><i>PostgreSQL</i><i>Docker</i><i>Keycloak</i><i>GitLab CI/CD</i><i>SonarQube</i><i>Microservices</i></span>
+  </div>
+</div>
+
+<section id="about" class="sec">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p class="eyebrow">Profil</p>
+        <h2 class="sec-title">Concevoir avant de coder.</h2>
+        <p>
+          Ce qui m'intéresse dans le développement logiciel tient autant à la réflexion en amont
+          qu'à l'implémentation : analyser un besoin, poser une architecture adaptée et comprendre
+          <strong>pourquoi</strong> une solution tient avant de la produire.
+        </p>
+        <p>
+          La plupart de mes projets se sont menés en équipe, en environnement <strong>agile
+          Scrum</strong>, sur une base de code partagée. J'y ai appris à défendre un choix technique,
+          à en accepter un autre, et à tenir les délais d'un sprint.
+        </p>
+      </div>
+      <div class="about-facts reveal">
+        <div class="fact">
+          <p class="fact-label">2023 – 2026</p>
+          <p class="fact-value">Master 2 Informatique <span>· Génie de l'Informatique Logicielle, UFR Sciences et Techniques à Rouen</span></p>
+        </div>
+        <div class="fact">
+          <p class="fact-label">2019 – 2023</p>
+          <p class="fact-value">Licence Informatique <span>· UFR Sciences et Techniques à Rouen</span></p>
+        </div>
+        <div class="fact">
+          <p class="fact-label">Langues</p>
+          <p class="fact-value">Français <span>· natif</span> · Anglais <span>· certification CLES B2</span></p>
+        </div>
+        <div class="fact">
+          <p class="fact-label">Mobilité</p>
+          <p class="fact-value">Permis B <span>· véhicule personnel</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work" class="sec">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Projets</p>
+      <h2 class="sec-title">Des projets menés de bout en bout.</h2>
+      <p class="sec-desc">
+        Une sélection de travaux réalisés pendant ma formation et sur mon temps personnel.
+      </p>
+    </div>
+
+    <article class="project reveal">
+      <div class="project-rail">
+        <p class="project-num">01</p>
+        <p class="project-mode">Équipe de 33</p>
+      </div>
+      <div class="project-card" data-tilt>
+        <div class="project-inner">
+          <div class="project-head">
+            <div>
+              <h3 class="project-title">OllMark</h3>
+              <p class="project-role">Développeur et concepteur · Projet annuel Master 2</p>
+            </div>
+            <p class="project-period">Sept. 2025 – Mars 2026</p>
+          </div>
+          <p class="project-context">
+            Studio de création de contenus marketing intégré à Ollca, une plateforme e-commerce
+            existante. Le produit repose sur une <strong>approche orientée plugins</strong> dans
+            Penpot : les fonctionnalités s'ajoutent à l'outil de design sans en modifier le cœur.
+          </p>
+          <p class="scope-label">Mon périmètre</p>
+          <ul class="scope">
+            <li>Des <strong>plugins Penpot développés en Angular</strong>, connectés aux données de la plateforme e-commerce : boutiques, produits, codes promo et QR codes.</li>
+            <li>Les <strong>microservices Spring Boot</strong> exposant ces données, consommés par les plugins via une API REST.</li>
+            <li>Un <strong>moteur de génération par templates</strong> piloté par des expressions JSONPath, configurable à l'exécution sans redéploiement.</li>
+            <li>L'intégration d'un <strong>assistant IA conversationnel</strong> avec Spring AI, capable de générer et de modifier des éléments graphiques, avec prévisualisation avant application.</li>
+            <li>L'<strong>export des designs vers Meta</strong> (Instagram, Facebook), avec adaptation des formats via les API des plateformes.</li>
+          </ul>
+          <div class="stack">
+            <span class="chip">Java</span>
+            <span class="chip">Spring Boot</span>
+            <span class="chip">Spring AI</span>
+            <span class="chip">Angular</span>
+            <span class="chip">API REST</span>
+            <span class="chip">Microservices</span>
+            <span class="chip">Keycloak</span>
+            <span class="chip">Penpot Plugins</span>
+            <span class="chip">Scrum</span>
+          </div>
+
+          <div class="gallery" data-gallery="ollmark">
+            <div class="gallery-head">
+              <p class="gallery-label">Captures</p>
+              <p class="gallery-count">12 captures</p>
+            </div>
+            <div class="gallery-track">
+              <button class="gallery-thumb" type="button" data-full="assets/img/ollmark/01-accueil-plugin.jpg" data-title="Plugin Export" data-desc="Vue d'ensemble du plugin Export ouvert dans Penpot.">
+                <img src="assets/img/ollmark/thumbs/01-accueil-plugin.jpg" width="2000" height="841" alt="OllMark, plugin Export" loading="lazy" decoding="async">
+              </button>
+              <button class="gallery-thumb" type="button" data-full="assets/img/ollmark/02-conversion-html.jpg" data-title="Conversion en HTML" data-desc="Code HTML généré par le plugin Export, à partir de la maquette Penpot.">
+                <img src="assets/img/ollmark/thumbs/02-conversion-html.jpg" width="2000" height="838" alt="OllMark, conversion en HTML" loading="lazy" decoding="async">
+              </button>
+              <button class="gallery-thumb" type="button" data-full="assets/img/ollmark/03-conversion-mjml.jpg" data-title="Conversion en MJML" data-desc="Code MJML généré par le plugin Export, à partir de la maquette Penpot.">
+                <img src="assets/img/ollmark/thumbs/03-conversion-mjml.jpg" width="2000" height="836" alt="OllMark, conversion en MJML" loading="lazy" decoding="async">
+              </button>
+              <button class="gallery-thumb" type="button" data-full="assets/img/ollmark/04-resultat-mjml.jpg" data-title="Résultat MJML" data-desc="Code MJML généré par le plugin Export, prévisualisé dans l'éditeur MJML.">
+                <img src="assets/img/ollmark/thumbs/04-resultat-mjml.jpg" width="2000" height="834" alt="OllMark, résultat MJML" loading="lazy" decoding="async">
+              </button>
+              <button class="gallery-thumb" type="button" data-full="assets/img/ollmark/05-resultat-html.jpg" data-title="Résultat HTML" data-desc="Code HTML généré par le plugin Export, prévisualisé dans un environnement externe.">
+                <img src="assets/img/ollmark/thumbs/05-resultat-html.jpg" width="2000" height="845" alt="OllMark, résultat HTML" loading="lazy" decoding="async">
+              </button>
+              <button class="gallery-thumb" type="button" data-full="assets/img/ollmark/06-conversion-wordpress.jpg" data-title="Conversion en WordPress" data-desc="Code WordPress généré par le plugin Export, à partir de la maquette Penpot.">
+                <img src="assets/img/ollmark/thumbs/06-conversion-wordpress.jpg" width="2000" height="842" alt="OllMark, conversion en WordPress" loading="lazy" decoding="async">
+              </button>
+              <button class="gallery-thumb" type="button" data-full="assets/img/ollmark/07-resultat-wordpress.jpg" data-title="Résultat sur WordPress" data-desc="Page publiée sur WordPress à partir du code généré par le plugin Export.">
+                <img src="assets/img/ollmark/thumbs/07-resultat-wordpress.jpg" width="2000" height="957" alt="OllMark, résultat sur WordPress" loading="lazy" decoding="async">
+              </button>
+              <button class="gallery-thumb" type="button" data-full="assets/img/ollmark/08-export-reseaux-sociaux.jpg" data-title="Export réseaux sociaux" data-desc="Publication d'un visuel directement sur Instagram, via les API Meta, depuis le plugin Export.">
+                <img src="assets/img/ollmark/thumbs/08-export-reseaux-sociaux.jpg" width="2000" height="901" alt="OllMark, export réseaux sociaux" loading="lazy" decoding="async">
+              </button>
+              <button class="gallery-thumb" type="button" data-full="assets/img/ollmark/09-resultat-export-reseaux.jpg" data-title="Résultat de l'export" data-desc="Visuel publié sur Instagram, redimensionné automatiquement par le plugin Export.">
+                <img src="assets/img/ollmark/thumbs/09-resultat-export-reseaux.jpg" width="1294" height="625" alt="OllMark, résultat de l'export réseaux sociaux publié sur Instagram" loading="lazy" decoding="async">
+              </button>
+              <button class="gallery-thumb" type="button" data-full="assets/img/ollmark/10-generation-contenu.jpg" data-title="Plugin Génération" data-desc="Recherche et sélection de boutiques, produits ou codes promo à insérer dans un modèle Penpot.">
+                <img src="assets/img/ollmark/thumbs/10-generation-contenu.jpg" width="2000" height="1065" alt="OllMark, plugin Génération" loading="lazy" decoding="async">
+              </button>
+              <button class="gallery-thumb" type="button" data-full="assets/img/ollmark/11-templating.jpg" data-title="Plugin Templating" data-desc="Bibliothèque de modèles Penpot avec variables ($shop.label, $product.label...) pilotées par des expressions JSONPath.">
+                <img src="assets/img/ollmark/thumbs/11-templating.jpg" width="2000" height="871" alt="OllMark, plugin Templating" loading="lazy" decoding="async">
+              </button>
+              <button class="gallery-thumb" type="button" data-full="assets/img/ollmark/12-assistant-ia.jpg" data-title="Plugin Génération IA" data-desc="Assistant conversationnel propulsé par Spring AI, capable de générer et modifier des éléments graphiques avec prévisualisation avant application.">
+                <img src="assets/img/ollmark/thumbs/12-assistant-ia.jpg" width="2000" height="934" alt="OllMark, plugin Génération IA" loading="lazy" decoding="async">
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="project reveal">
+      <div class="project-rail">
+        <p class="project-num">02</p>
+        <p class="project-mode">Équipe de 15</p>
+      </div>
+      <div class="project-card" data-tilt>
+        <div class="project-inner">
+          <div class="project-head">
+            <div>
+              <h3 class="project-title">AGORA</h3>
+              <p class="project-role">Développeur équipe plateforme · Projet annuel Master 1</p>
+            </div>
+            <p class="project-period">Oct. 2023 – Juin 2024</p>
+          </div>
+          <p class="project-context">
+            Refonte complète d'une plateforme web de jeux de société en ligne, où les joueurs
+            s'affrontent à distance en temps réel. Le développement était réparti entre un groupe
+            dédié aux jeux et un groupe dédié à la <strong>plateforme</strong>, le socle sur lequel
+            les jeux viennent se brancher.
+          </p>
+          <p class="scope-label">Mon périmètre</p>
+          <ul class="scope">
+            <li>L'<strong>interface principale</strong> de la plateforme : navigation, gestion des salles d'attente, affichage des jeux disponibles.</li>
+            <li>Un <strong>système de salles d'attente par jeu</strong>, pour lancer une partie entre amis ou rejoindre des joueurs inconnus.</li>
+            <li>La <strong>synchronisation temps réel via le protocole Mercure</strong> : les parties et l'interface se mettent à jour sans rechargement.</li>
+            <li>La phase de conception amont : rédaction des <strong>documents techniques</strong> (STB, DAL, cahier de test, analyse des risques).</li>
+          </ul>
+          <div class="stack">
+            <span class="chip">PHP</span>
+            <span class="chip">Symfony 6.4</span>
+            <span class="chip">Mercure</span>
+            <span class="chip">MariaDB</span>
+            <span class="chip">Tailwind CSS</span>
+            <span class="chip">Docker</span>
+            <span class="chip">Traefik</span>
+            <span class="chip">Scrum</span>
+            <span class="chip">Jira</span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="project reveal">
+      <div class="project-rail">
+        <p class="project-num">03</p>
+        <p class="project-mode">En autonomie</p>
+      </div>
+      <div class="project-card" data-tilt>
+        <div class="project-inner">
+          <div class="project-head">
+            <div>
+              <h3 class="project-title">Plateforme de jeux temps réel</h3>
+              <p class="project-role">Projet personnel</p>
+            </div>
+            <p class="project-period">Sept. 2025 – Janv. 2026</p>
+          </div>
+          <p class="project-context">
+            Plateforme de jeux multijoueurs sans comptes utilisateurs :
+            <strong>l'accès à une partie repose sur un code ou un lien d'invitation partageable</strong>, ce qui
+            supprime la friction à l'entrée. L'enjeu principal était la synchronisation de l'état
+            de partie entre les joueurs en temps réel.
+          </p>
+          <p class="scope-label">Mon périmètre</p>
+          <ul class="scope">
+            <li>Un <strong>back end C# avec .NET 9 et ASP.NET Core</strong>, découpé en trois projets : un domaine qui définit les contrats, une couche d'infrastructure qui les implémente, et une API qui expose le tout.</li>
+            <li>La <strong>communication temps réel via SignalR</strong> : arrivée des joueurs dans une salle d'attente, diffusion des actions, mise à jour de l'état de partie.</li>
+            <li>Un <strong>système de salles d'attente</strong> accessibles par code ou lien d'invitation, gestion des participants, salles privées protégées par mot de passe et lancement réservé au créateur.</li>
+            <li><strong>Deux jeux multijoueurs</strong> (Morpion et Puissance 4) avec gestion des règles, des tours et de l'état de partie, une liste des salles d'attente mise à jour en direct, un historique des actions et un classement par jeu.</li>
+          </ul>
+          <div class="stack">
+            <span class="chip">C#</span>
+            <span class="chip">.NET 9</span>
+            <span class="chip">ASP.NET Core</span>
+            <span class="chip">SignalR</span>
+            <span class="chip">React</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip">Vite</span>
+            <span class="chip">Tailwind CSS</span>
+            <span class="chip">Entity Framework Core</span>
+            <span class="chip">SQLite</span>
+            <span class="chip">API REST</span>
+          </div>
+
+          <div class="gallery" data-gallery="gameplatform">
+            <div class="gallery-head">
+              <p class="gallery-label">Captures</p>
+              <p class="gallery-count">8 captures</p>
+            </div>
+            <div class="gallery-track">
+              <button class="gallery-thumb" type="button" data-full="assets/img/gameplatform/01-accueil-dark.jpg" data-title="Accueil (mode sombre)" data-desc="Page d'accueil de la plateforme : création d'une partie ou connexion avec un code.">
+                <img src="assets/img/gameplatform/thumbs/01-accueil-dark.jpg" width="2000" height="1098" alt="Plateforme de jeux, accueil en mode sombre" loading="lazy" decoding="async">
+              </button>
+              <button class="gallery-thumb" type="button" data-full="assets/img/gameplatform/02-accueil-clair.jpg" data-title="Accueil (mode clair)" data-desc="Le même écran d'accueil en thème clair.">
+                <img src="assets/img/gameplatform/thumbs/02-accueil-clair.jpg" width="2000" height="1098" alt="Plateforme de jeux, accueil en mode clair" loading="lazy" decoding="async">
+              </button>
+              <button class="gallery-thumb" type="button" data-full="assets/img/gameplatform/03-partie-puissance4.jpg" data-title="Partie de Puissance 4" data-desc="Une partie de Puissance 4 terminée, avec l'état de la partie mis à jour en temps réel via SignalR.">
+                <img src="assets/img/gameplatform/thumbs/03-partie-puissance4.jpg" width="2000" height="1104" alt="Plateforme de jeux, partie de Puissance 4" loading="lazy" decoding="async">
+              </button>
+              <button class="gallery-thumb" type="button" data-full="assets/img/gameplatform/04-salle-attente.jpg" data-title="Salle d'attente" data-desc="Salle d'attente avant le lancement d'une partie : liste des joueurs, lancement réservé à l'hôte.">
+                <img src="assets/img/gameplatform/thumbs/04-salle-attente.jpg" width="2000" height="1089" alt="Plateforme de jeux, salle d'attente" loading="lazy" decoding="async">
+              </button>
+              <button class="gallery-thumb" type="button" data-full="assets/img/gameplatform/05-accueil-dark-mobile.jpg" data-title="Accueil mobile (mode sombre)" data-desc="Interface responsive de l'accueil, consultée depuis un smartphone.">
+                <img src="assets/img/gameplatform/thumbs/05-accueil-dark-mobile.jpg" width="1725" height="1393" alt="Plateforme de jeux, accueil mobile en mode sombre" loading="lazy" decoding="async">
+              </button>
+              <button class="gallery-thumb" type="button" data-full="assets/img/gameplatform/06-accueil-clair-mobile.jpg" data-title="Accueil mobile (mode clair)" data-desc="Le thème clair sur smartphone.">
+                <img src="assets/img/gameplatform/thumbs/06-accueil-clair-mobile.jpg" width="1728" height="1393" alt="Plateforme de jeux, accueil mobile en mode clair" loading="lazy" decoding="async">
+              </button>
+              <button class="gallery-thumb" type="button" data-full="assets/img/gameplatform/07-salle-attente-mobile.jpg" data-title="Salle d'attente mobile" data-desc="La salle d'attente d'une partie, adaptée à un écran de smartphone.">
+                <img src="assets/img/gameplatform/thumbs/07-salle-attente-mobile.jpg" width="1725" height="1387" alt="Plateforme de jeux, salle d'attente mobile" loading="lazy" decoding="async">
+              </button>
+              <button class="gallery-thumb" type="button" data-full="assets/img/gameplatform/08-puissance4-mobile.jpg" data-title="Puissance 4 sur mobile" data-desc="Une partie de Puissance 4 jouée depuis un smartphone.">
+                <img src="assets/img/gameplatform/thumbs/08-puissance4-mobile.jpg" width="1723" height="1390" alt="Plateforme de jeux, Puissance 4 sur mobile" loading="lazy" decoding="async">
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section id="stack" class="sec">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Compétences</p>
+      <h2 class="sec-title">Stack technique.</h2>
+      <p class="sec-desc">Les technologies que j'ai pratiquées en projet ou en cours.</p>
+    </div>
+    <div class="skills-grid reveal">
+      <div class="skill-cat">
+        <h3 class="skill-cat-name"># Langages</h3>
+        <ul class="skill-list">
+          <li>Java</li><li>C#</li><li>PHP</li><li>TypeScript</li><li>JavaScript</li>
+          <li>SQL</li><li>C</li><li>OCaml</li><li>HTML</li><li>CSS</li>
+        </ul>
+      </div>
+      <div class="skill-cat">
+        <h3 class="skill-cat-name"># Back end</h3>
+        <ul class="skill-list">
+          <li>Spring Boot</li><li>Spring AI</li><li>ASP.NET Core</li><li>Symfony</li>
+          <li>API REST</li><li>Swagger</li><li>Microservices</li><li>Mercure</li><li>SignalR</li>
+        </ul>
+      </div>
+      <div class="skill-cat">
+        <h3 class="skill-cat-name"># Front end</h3>
+        <ul class="skill-list">
+          <li>React</li><li>Angular</li><li>Vite</li><li>Tailwind CSS</li><li>Material UI</li><li>Bootstrap</li>
+        </ul>
+      </div>
+      <div class="skill-cat">
+        <h3 class="skill-cat-name"># Bases de données</h3>
+        <ul class="skill-list">
+          <li>PostgreSQL</li><li>MariaDB</li><li>SQLite</li><li>Elasticsearch</li>
+          <li>Hibernate / JPA</li><li>Entity Framework Core</li>
+        </ul>
+      </div>
+      <div class="skill-cat">
+        <h3 class="skill-cat-name"># Intégration et déploiement</h3>
+        <ul class="skill-list">
+          <li>Git</li><li>GitLab CI/CD</li><li>Docker</li><li>Maven</li><li>Traefik</li>
+        </ul>
+      </div>
+      <div class="skill-cat">
+        <h3 class="skill-cat-name"># Qualité et sécurité</h3>
+        <ul class="skill-list">
+          <li>SonarQube</li><li>JaCoCo</li><li>Keycloak</li><li>OpenID Connect</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <p class="eyebrow reveal">Contact</p>
+    <h2 class="contact-title reveal">Travaillons ensemble.</h2>
+    <div class="contact-links reveal">
+      <a href="mailto:mohamed_cherfi@outlook.fr" class="btn btn-primary" data-magnetic>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
+        mohamed_cherfi@outlook.fr
+      </a>
+      <a href="tel:+33783102897" class="btn btn-ghost" data-magnetic>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 3.08 5.18 2 2 0 0 1 5 3h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L9 11a16 16 0 0 0 4 4l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        +33 7 83 10 28 97
+      </a>
+      <a href="https://www.linkedin.com/in/cherfi-20192b372" class="btn btn-ghost" data-magnetic target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg>
+        LinkedIn
+      </a>
+      <a href="https://github.com/mcherfi-dev" class="btn btn-ghost" data-magnetic target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2A10 10 0 002 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"/></svg>
+        GitHub
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <p>© <span data-year>2026</span> Mohamed Cherfi</p>
+    <p><a href="#top">Retour en haut ↑</a></p>
+  </div>
+</footer>
+
+<div class="lb" data-gallery-lightbox aria-hidden="true">
+  <div class="lb-scrim" data-gallery-close></div>
+  <div class="lb-shell" role="dialog" aria-modal="true" aria-label="Galerie de captures d'écran">
+    <div class="lb-bar">
+      <div class="lb-bar-left">
+        <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="lb-fname" data-gallery-fname>captures.gallery</span>
+      </div>
+      <div class="lb-bar-right">
+        <span class="lb-count"><b data-gallery-current>1</b> / <span data-gallery-total>1</span></span>
+        <button class="lb-close" type="button" data-gallery-close aria-label="Fermer la galerie">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="lb-stage">
+      <button class="lb-nav lb-prev" type="button" data-gallery-prev aria-label="Image précédente">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <div class="lb-frame" data-gallery-frame>
+        <img class="lb-img" data-gallery-img alt="">
+      </div>
+      <button class="lb-nav lb-next" type="button" data-gallery-next aria-label="Image suivante">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+      </button>
+    </div>
+
+    <div class="lb-caption">
+      <p class="lb-caption-title" data-gallery-title></p>
+      <p class="lb-caption-desc" data-gallery-desc></p>
+    </div>
+
+    <div class="lb-filmstrip" data-gallery-filmstrip></div>
+  </div>
+</div>
+
+</body>
+</html>
