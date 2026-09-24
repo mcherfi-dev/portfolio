@@ -171,13 +171,14 @@
             Studio de création de contenus marketing intégré à Ollca, une plateforme e-commerce
             existante. Le produit se présente sous forme de <strong>plugins Penpot</strong> :
             des modules qui s'ajoutent à l'outil de design sans en modifier le cœur. J'ai
-            travaillé sur les microservices Spring Boot côté backend, les plugins Angular côté
-            frontend, et l'intégration d'un assistant IA basé sur Spring AI.
+            travaillé sur les microservices Spring Boot côté backend, exposés aux plugins à
+            travers une API Gateway Nginx, les plugins Angular côté frontend, et l'intégration
+            d'un assistant IA basé sur Spring AI.
           </p>
-          <p class="scope-label">Contribution au projet</p>
+          <p class="scope-label">Sur quoi j'ai travaillé</p>
           <ul class="scope">
             <li><strong>Développer des plugins Penpot en Angular</strong>, connectés aux données de la plateforme e-commerce : boutiques, produits, codes promo et QR codes.</li>
-            <li><strong>Exposer ces données</strong> via des microservices Spring Boot et une API REST, consommée par les plugins.</li>
+            <li><strong>Développer les microservices Spring Boot</strong> exposant ces données aux plugins via une API REST.</li>
             <li><strong>Participer à la conception d'un moteur de génération par templates</strong>, piloté par des expressions JSONPath, configurable sans redéploiement.</li>
             <li><strong>Intégrer un assistant IA</strong> basé sur Spring AI, capable de générer et modifier des éléments graphiques, avec prévisualisation avant application.</li>
             <li><strong>Contribuer à l'export des designs vers Meta</strong> (Instagram, Facebook), avec adaptation des formats.</li>
@@ -262,17 +263,16 @@
             l'autre à la <strong>plateforme</strong>, le socle technique sur lequel les jeux
             s'intègrent.
           </p>
-          <p class="scope-label">Contribution au projet</p>
+          <p class="scope-label">Sur quoi j'ai travaillé</p>
           <ul class="scope">
-            <li><strong>Participer à la conception de l'interface principale</strong> de la plateforme : navigation, gestion des salles d'attente, catalogue des jeux disponibles.</li>
+            <li><strong>Développer l'interface principale de la plateforme</strong> : navigation, catalogue des jeux disponibles, parcours utilisateur.</li>
+            <li><strong>Mettre en place l'authentification et l'espace d'administration</strong> : gestion des utilisateurs et des jeux.</li>
             <li><strong>Développer un système de salles d'attente par jeu</strong>, pour lancer une partie entre amis ou rejoindre des joueurs inconnus.</li>
-            <li><strong>Mettre en place la synchronisation temps réel</strong> via le protocole Mercure : les parties et l'interface se mettent à jour sans rechargement.</li>
             <li><strong>Rédiger les documents techniques</strong> en amont du développement : STB, DAL, cahier de test et analyse des risques.</li>
           </ul>
           <div class="stack">
             <span class="chip">PHP</span>
             <span class="chip">Symfony 6.4</span>
-            <span class="chip">Mercure</span>
             <span class="chip">MariaDB</span>
             <span class="chip">Tailwind CSS</span>
             <span class="chip">Docker</span>
@@ -304,7 +304,7 @@
             repose sur un code ou un lien d'invitation partageable. L'enjeu principal était la
             synchronisation de l'état de partie entre les joueurs.
           </p>
-          <p class="scope-label">Contribution au projet</p>
+          <p class="scope-label">Sur quoi j'ai travaillé</p>
           <ul class="scope">
             <li><strong>Développer un backend C# en .NET 9 et ASP.NET Core</strong>, organisé en trois couches : un domaine qui définit les contrats, une infrastructure qui les implémente, et une API qui expose le tout.</li>
             <li><strong>Mettre en place la communication temps réel via SignalR</strong> : entrée en salle d'attente, diffusion des actions, mise à jour de l'état de partie.</li>
