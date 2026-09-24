@@ -5,7 +5,7 @@ Je cherche un stage de 6 mois en développement full stack.
 
 **Site** : https://mohamedcherfi.vercel.app
 
-**CV** : [assets/cv-mohamed-cherfi.pdf](assets/cv-mohamed-cherfi.pdf)
+**CV** : [assets/cv-mohamed-cherfi.pdf](assets/CV_Mohamed_CHERFI.pdf)
 
 **LinkedIn** : [cherfi-20192b372](https://www.linkedin.com/in/cherfi-20192b372)
 
