@@ -4,7 +4,9 @@ Je m'appelle Mohamed Cherfi, étudiant en Master 2 Génie de l'Informatique
 Logicielle à Rouen. Je cherche un stage de 6 mois en développement full stack.
 
 **Site** : https://mohamedcherfi.vercel.app
+
 **CV** : [assets/cv-mohamed-cherfi.pdf](assets/cv-mohamed-cherfi.pdf)
+
 **LinkedIn** : [cherfi-20192b372](https://www.linkedin.com/in/cherfi-20192b372)
 
 ## Ce que contient ce portfolio
