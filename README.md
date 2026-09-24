@@ -14,13 +14,9 @@ Logicielle à Rouen. Je cherche un stage de 6 mois en développement full stack.
 Trois projets présentés en détail, avec captures d'écran :
 
 - **OllMark** · Studio de création de contenus marketing intégré à la
-  plateforme e-commerce Ollca. J'ai travaillé sur les plugins Penpot en
-  Angular, les microservices Spring Boot, et un assistant IA basé sur
-  Spring AI.
+  plateforme e-commerce Ollca.
 - **AGORA** · Plateforme web de jeux de société en ligne en temps réel.
-  Application Symfony, synchronisation via Mercure.
-- **Plateforme de jeux multijoueurs** · Projet personnel. Back end .NET 9,
-  communication temps réel via SignalR.
+- **Plateforme de jeux multijoueurs** · Plateforme web de jeux de société en ligne en temps réel.
 
 ## Comment je l'ai construit
 
