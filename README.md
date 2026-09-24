@@ -1,7 +1,7 @@
-# Portfolio · Mohamed Cherfi
+# Portfolio
 
-Je m'appelle Mohamed Cherfi, étudiant en Master 2 Génie de l'Informatique
-Logicielle à Rouen. Je cherche un stage de 6 mois en développement full stack.
+Étudiant en Master 2 Génie de l'Informatique Logicielle à Rouen. 
+Je cherche un stage de 6 mois en développement full stack.
 
 **Site** : https://mohamedcherfi.vercel.app
 
