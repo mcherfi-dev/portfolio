@@ -163,23 +163,23 @@
           <div class="project-head">
             <div>
               <h3 class="project-title">Qwish</h3>
-              <p class="project-role">Concepteur et développeur full stack · Projet personnel</p>
+              <p class="project-role">Conception et développement full stack · Projet personnel</p>
             </div>
             <p class="project-period">Avril 2026 à novembre 2026<br><strong>En cours de développement</strong></p>
           </div>
           <p class="project-context">
-            Marketplace multivendeur qui réunit des <strong>espaces client, vendeur et administrateur</strong>.
-            Je prends en charge l’architecture, le backend, les interfaces et la chaîne de validation.
-            La version présentée fonctionne en local, avec des données de démonstration et un paiement simulé.
+            Marketplace multivendeur conçue et développée en autonomie, de l’architecture logicielle aux interfaces et à l’automatisation des contrôles qualité.
+            La plateforme associe des <strong>parcours d’achat et des espaces de gestion vendeur et administrateur</strong>.
+            Version de démonstration locale, avec paiement simulé ; développement en cours.
           </p>
           <p class="scope-label">Réalisations</p>
           <ul class="scope">
-            <li><strong>Concevoir une architecture de six microservices</strong> en Java 21 et Spring Boot 4, derrière une API Gateway, avec des bases PostgreSQL isolées par domaine et un panier stocké dans Redis.</li>
-            <li><strong>Développer les parcours en React et Next.js</strong> : catalogue et recherche, fiches produits, panier, commandes, avis et retours, ainsi que les outils de gestion des vendeurs et administrateurs.</li>
-            <li><strong>Mettre en place l’authentification et les contrôles d’accès</strong> avec Keycloak, OpenID Connect et Spring Security, jusque dans les API et les actions serveur.</li>
-            <li><strong>Fiabiliser le checkout et les échanges interservices</strong> : idempotence des commandes, gestion concurrente du stock et reprise des opérations interrompues.</li>
-            <li><strong>Internationaliser l’interface en huit langues</strong>, avec prise en charge de l’écriture de droite à gauche et affichage des prix dans la devise choisie.</li>
-            <li><strong>Automatiser la validation et le suivi de qualité</strong> : plus de 2 300 tests unitaires et d’intégration, des parcours E2E Playwright, une CI GitLab avec SonarQube et analyse des images Docker, et une observabilité OpenTelemetry, Prometheus et Grafana.</li>
+            <li><strong>Architecture distribuée en Java 21 et Spring Boot 4</strong> : cinq services métier (utilisateurs, catalogue, panier, commandes et avis) accessibles via un point d’entrée Spring Cloud Gateway.</li>
+            <li><strong>Stockage adapté à chaque domaine</strong> : quatre bases PostgreSQL dédiées aux domaines métier, Redis pour le panier, Elasticsearch pour la recherche et MinIO pour les images du catalogue.</li>
+            <li><strong>Interfaces Next.js et React avec rendu serveur</strong> : parcours client, gestion vendeur et administration, huit langues dont l’arabe avec affichage de droite à gauche, et sélection de la devise.</li>
+            <li><strong>Authentification et autorisations par rôle</strong> : Keycloak et OpenID Connect avec Auth.js côté web, validation des JWT et contrôles d’accès Spring Security côté backend.</li>
+            <li><strong>Fiabilité du cycle de commande</strong> : checkout idempotent, gestion concurrente du stock et reprise des opérations de stock interrompues. Publication d’événements de commande avec RabbitMQ.</li>
+            <li><strong>Validation automatisée et observabilité</strong> : tests unitaires, d’intégration et E2E avec JUnit, Testcontainers, Vitest et Playwright ; CI GitLab, SonarQube et analyse des images Docker avec Trivy ; traces et métriques avec OpenTelemetry, Prometheus et Grafana.</li>
           </ul>
           <div class="stack">
             <span class="chip">Java 21</span>
@@ -206,23 +206,23 @@
               <button class="gallery-thumb" type="button" data-full="assets/img/qwish/01-catalogue.jpg" data-title="Catalogue et recherche" data-desc="Catalogue filtrable par catégorie, prix, disponibilité et avis. La recherche et les filtres s’appuient sur Elasticsearch.">
                 <img src="assets/img/qwish/thumbs/01-catalogue.jpg" width="1600" height="1000" alt="Qwish, catalogue et recherche" loading="lazy" decoding="async">
               </button>
-              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/02-fiche-produit.jpg" data-title="Fiche produit" data-desc="Description, prix en euros, stock, vendeur et actions d’achat dans l’espace client.">
-                <img src="assets/img/qwish/thumbs/02-fiche-produit.jpg" width="1600" height="1000" alt="Qwish, fiche produit" loading="lazy" decoding="async">
+              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/v2/02-fiche-produit.jpg" data-title="Fiche produit" data-desc="Description, prix en euros, stock, vendeur et actions d’achat dans l’espace client.">
+                <img src="assets/img/qwish/v2/thumbs/02-fiche-produit.jpg" width="1152" height="696" alt="Qwish, fiche produit" loading="lazy" decoding="async">
               </button>
               <button class="gallery-thumb" type="button" data-full="assets/img/qwish/03-catalogue-mobile.jpg" data-title="Navigation sur mobile" data-desc="Catalogue et navigation adaptés aux écrans mobiles.">
                 <img src="assets/img/qwish/thumbs/03-catalogue-mobile.jpg" width="430" height="932" alt="Qwish, navigation sur mobile" loading="lazy" decoding="async">
               </button>
-              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/04-espace-vendeur.jpg" data-title="Gestion du catalogue vendeur" data-desc="Espace réservé au vendeur pour gérer ses produits, leurs prix, leur stock et leur statut.">
-                <img src="assets/img/qwish/thumbs/04-espace-vendeur.jpg" width="1600" height="1000" alt="Qwish, gestion du catalogue vendeur" loading="lazy" decoding="async">
+              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/v2/04-espace-vendeur.jpg" data-title="Gestion du catalogue vendeur" data-desc="Gestion des produits, prix, stocks et statuts dans l’espace vendeur, sur un catalogue de démonstration.">
+                <img src="assets/img/qwish/v2/thumbs/04-espace-vendeur.jpg" width="1280" height="883" alt="Qwish, gestion du catalogue vendeur" loading="lazy" decoding="async">
               </button>
-              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/05-administration.jpg" data-title="Administration de la marketplace" data-desc="Supervision des utilisateurs, du catalogue et des commandes avec un accès réservé aux administrateurs.">
-                <img src="assets/img/qwish/thumbs/05-administration.jpg" width="1600" height="1000" alt="Qwish, administration de la marketplace" loading="lazy" decoding="async">
+              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/v2/05-administration.jpg" data-title="Administration du catalogue" data-desc="Gestion des catégories et sous-catégories dans l’espace administrateur, sur des données de démonstration.">
+                <img src="assets/img/qwish/v2/thumbs/05-administration.jpg" width="1280" height="883" alt="Qwish, administration des catégories du catalogue" loading="lazy" decoding="async">
               </button>
-              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/06-pipeline-gitlab.jpg" data-title="Pipeline GitLab CI" data-desc="Compilation, tests unitaires et d’intégration, analyse SonarQube et construction des six images backend. Exécution locale réussie sur la version présentée.">
-                <img src="assets/img/qwish/thumbs/06-pipeline-gitlab.jpg" width="1800" height="900" alt="Qwish, pipeline gitlab ci" loading="lazy" decoding="async">
+              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/v2/06-pipeline-gitlab.jpg" data-title="Pipeline GitLab CI" data-desc="Extrait de la pipeline backend : compilation, tests, analyse SonarQube et construction des six images applicatives, correspondant à la Gateway et aux cinq services métier.">
+                <img src="assets/img/qwish/v2/thumbs/06-pipeline-gitlab.jpg" width="1448" height="198" alt="Qwish, pipeline GitLab CI" loading="lazy" decoding="async">
               </button>
-              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/07-qualite-sonarqube.jpg" data-title="Qualité du backend" data-desc="Quality gate SonarQube validée : couverture et absence de nouvelles anomalies sur la version analysée.">
-                <img src="assets/img/qwish/thumbs/07-qualite-sonarqube.jpg" width="1800" height="900" alt="Qwish, qualité du backend" loading="lazy" decoding="async">
+              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/v2/07-qualite-sonarqube.jpg" data-title="Qualité du backend" data-desc="Extrait du rapport backend SonarQube : Quality Gate validée, aucune nouvelle anomalie et couverture de 94,7 % sur le nouveau code de la période analysée.">
+                <img src="assets/img/qwish/v2/thumbs/07-qualite-sonarqube.jpg" width="1153" height="578" alt="Qwish, qualité du backend" loading="lazy" decoding="async">
               </button>
             </div>
           </div>
