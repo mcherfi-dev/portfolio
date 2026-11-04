@@ -96,8 +96,8 @@
 
 <div class="ticker" aria-hidden="true">
   <div class="ticker-track">
-    <span class="ticker-group"><i>Java</i><i>Spring Boot</i><i>Angular</i><i>React</i><i>API REST</i><i>C# / .NET</i><i>Symfony</i><i>Kafka</i><i>PostgreSQL</i><i>MongoDB</i><i>Docker</i><i>GitLab CI/CD</i><i>Scrum</i></span>
-    <span class="ticker-group"><i>Java</i><i>Spring Boot</i><i>Angular</i><i>React</i><i>API REST</i><i>C# / .NET</i><i>Symfony</i><i>Kafka</i><i>PostgreSQL</i><i>MongoDB</i><i>Docker</i><i>GitLab CI/CD</i><i>Scrum</i></span>
+    <span class="ticker-group"><i>Java</i><i>Spring Boot</i><i>Angular</i><i>React</i><i>Next.js</i><i>API REST</i><i>C# / .NET</i><i>Symfony</i><i>Kafka</i><i>PostgreSQL</i><i>MongoDB</i><i>Docker</i><i>GitLab CI/CD</i><i>Scrum</i></span>
+    <span class="ticker-group"><i>Java</i><i>Spring Boot</i><i>Angular</i><i>React</i><i>Next.js</i><i>API REST</i><i>C# / .NET</i><i>Symfony</i><i>Kafka</i><i>PostgreSQL</i><i>MongoDB</i><i>Docker</i><i>GitLab CI/CD</i><i>Scrum</i></span>
   </div>
 </div>
 
@@ -153,9 +153,86 @@
       </p>
     </div>
 
-    <article class="project reveal">
+    <article class="project reveal" id="qwish">
       <div class="project-rail">
         <p class="project-num">01</p>
+        <p class="project-mode">Réalisé seul</p>
+      </div>
+      <div class="project-card" data-tilt>
+        <div class="project-inner">
+          <div class="project-head">
+            <div>
+              <h3 class="project-title">Qwish</h3>
+              <p class="project-role">Concepteur et développeur full stack · Projet personnel</p>
+            </div>
+            <p class="project-period">Avril 2026 à novembre 2026<br><strong>En cours de développement</strong></p>
+          </div>
+          <p class="project-context">
+            Marketplace multivendeur qui réunit des <strong>espaces client, vendeur et administrateur</strong>.
+            Je prends en charge l’architecture, le backend, les interfaces et la chaîne de validation.
+            La version présentée fonctionne en local, avec des données de démonstration et un paiement simulé.
+          </p>
+          <p class="scope-label">Réalisations</p>
+          <ul class="scope">
+            <li><strong>Concevoir une architecture de six microservices</strong> en Java 21 et Spring Boot 4, derrière une API Gateway, avec des bases PostgreSQL isolées par domaine et un panier stocké dans Redis.</li>
+            <li><strong>Développer les parcours en React et Next.js</strong> : catalogue et recherche, fiches produits, panier, commandes, avis et retours, ainsi que les outils de gestion des vendeurs et administrateurs.</li>
+            <li><strong>Mettre en place l’authentification et les contrôles d’accès</strong> avec Keycloak, OpenID Connect et Spring Security, jusque dans les API et les actions serveur.</li>
+            <li><strong>Fiabiliser le checkout et les échanges interservices</strong> : idempotence des commandes, gestion concurrente du stock et reprise des opérations interrompues.</li>
+            <li><strong>Internationaliser l’interface en huit langues</strong>, avec prise en charge de l’écriture de droite à gauche et affichage des prix dans la devise choisie.</li>
+            <li><strong>Automatiser la validation et le suivi de qualité</strong> : plus de 2 300 tests unitaires et d’intégration, des parcours E2E Playwright, une CI GitLab avec SonarQube et analyse des images Docker, et une observabilité OpenTelemetry, Prometheus et Grafana.</li>
+          </ul>
+          <div class="stack">
+            <span class="chip">Java 21</span>
+            <span class="chip">Spring Boot 4</span>
+            <span class="chip">Next.js / React</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">Redis</span>
+            <span class="chip">Elasticsearch</span>
+            <span class="chip">RabbitMQ</span>
+            <span class="chip">Keycloak</span>
+            <span class="chip">Docker Compose</span>
+            <span class="chip">GitLab CI</span>
+            <span class="chip">SonarQube</span>
+            <span class="chip">OpenTelemetry</span>
+          </div>
+
+          <div class="gallery" data-gallery="qwish">
+            <div class="gallery-head">
+              <p class="gallery-label">Captures de la version locale</p>
+              <p class="gallery-count">7 captures</p>
+            </div>
+            <div class="gallery-track">
+              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/01-catalogue.jpg" data-title="Catalogue et recherche" data-desc="Catalogue filtrable par catégorie, prix, disponibilité et avis. La recherche et les filtres s’appuient sur Elasticsearch.">
+                <img src="assets/img/qwish/thumbs/01-catalogue.jpg" width="1600" height="1000" alt="Qwish, catalogue et recherche" loading="lazy" decoding="async">
+              </button>
+              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/02-fiche-produit.jpg" data-title="Fiche produit" data-desc="Description, prix en euros, stock, vendeur et actions d’achat dans l’espace client.">
+                <img src="assets/img/qwish/thumbs/02-fiche-produit.jpg" width="1600" height="1000" alt="Qwish, fiche produit" loading="lazy" decoding="async">
+              </button>
+              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/03-catalogue-mobile.jpg" data-title="Navigation sur mobile" data-desc="Catalogue et navigation adaptés aux écrans mobiles.">
+                <img src="assets/img/qwish/thumbs/03-catalogue-mobile.jpg" width="430" height="932" alt="Qwish, navigation sur mobile" loading="lazy" decoding="async">
+              </button>
+              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/04-espace-vendeur.jpg" data-title="Gestion du catalogue vendeur" data-desc="Espace réservé au vendeur pour gérer ses produits, leurs prix, leur stock et leur statut.">
+                <img src="assets/img/qwish/thumbs/04-espace-vendeur.jpg" width="1600" height="1000" alt="Qwish, gestion du catalogue vendeur" loading="lazy" decoding="async">
+              </button>
+              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/05-administration.jpg" data-title="Administration de la marketplace" data-desc="Supervision des utilisateurs, du catalogue et des commandes avec un accès réservé aux administrateurs.">
+                <img src="assets/img/qwish/thumbs/05-administration.jpg" width="1600" height="1000" alt="Qwish, administration de la marketplace" loading="lazy" decoding="async">
+              </button>
+              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/06-pipeline-gitlab.jpg" data-title="Pipeline GitLab CI" data-desc="Compilation, tests unitaires et d’intégration, analyse SonarQube et construction des six images backend. Exécution locale réussie sur la version présentée.">
+                <img src="assets/img/qwish/thumbs/06-pipeline-gitlab.jpg" width="1800" height="900" alt="Qwish, pipeline gitlab ci" loading="lazy" decoding="async">
+              </button>
+              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/07-qualite-sonarqube.jpg" data-title="Qualité du backend" data-desc="Quality gate SonarQube validée : couverture et absence de nouvelles anomalies sur la version analysée.">
+                <img src="assets/img/qwish/thumbs/07-qualite-sonarqube.jpg" width="1800" height="900" alt="Qwish, qualité du backend" loading="lazy" decoding="async">
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="project reveal">
+      <div class="project-rail">
+        <p class="project-num">02</p>
         <p class="project-mode">Équipe de 33</p>
       </div>
       <div class="project-card" data-tilt>
@@ -246,7 +323,7 @@
 
     <article class="project reveal">
       <div class="project-rail">
-        <p class="project-num">02</p>
+        <p class="project-num">03</p>
         <p class="project-mode">Équipe de 15</p>
       </div>
       <div class="project-card" data-tilt>
@@ -287,7 +364,7 @@
 
     <article class="project reveal">
       <div class="project-rail">
-        <p class="project-num">03</p>
+        <p class="project-num">04</p>
         <p class="project-mode">Projet universitaire</p>
       </div>
       <div class="project-card" data-tilt>
@@ -375,41 +452,45 @@
       <div class="skill-cat">
         <h3 class="skill-cat-name"># Backend</h3>
         <ul class="skill-list">
-          <li>Java</li><li>Spring Boot</li><li>C#</li><li>.NET</li><li>PHP</li><li>Symfony</li>
+          <li>Java 21</li><li>Spring Boot 4</li><li>C#</li><li>.NET</li><li>PHP</li><li>Symfony</li>
           <li>API REST</li><li>Microservices</li><li>API Gateway (Nginx)</li><li>Kafka</li>
           <li>Swagger</li><li>SignalR</li><li>Keycloak</li>
+          <li>Spring Cloud Gateway</li><li>Spring Security</li><li>OAuth 2.0 / OpenID Connect</li><li>RabbitMQ</li><li>Resilience4j</li>
         </ul>
       </div>
       <div class="skill-cat">
         <h3 class="skill-cat-name"># Frontend</h3>
         <ul class="skill-list">
-          <li>Angular</li><li>React</li><li>TypeScript</li><li>JavaScript</li>
-          <li>Tailwind CSS</li><li>Material UI</li>
+          <li>Angular</li><li>React</li><li>Next.js</li><li>TypeScript</li><li>JavaScript</li>
+          <li>Tailwind CSS</li><li>Material UI</li><li>Auth.js</li><li>Internationalisation (i18n)</li>
         </ul>
       </div>
       <div class="skill-cat">
         <h3 class="skill-cat-name"># Données</h3>
         <ul class="skill-list">
-          <li>PostgreSQL</li><li>MongoDB</li><li>SQLite</li><li>Elasticsearch</li>
-          <li>Hibernate / JPA</li><li>Entity Framework Core</li>
+          <li>PostgreSQL</li><li>MongoDB</li><li>SQLite</li><li>Elasticsearch</li><li>Redis</li><li>MinIO</li>
+          <li>Hibernate / JPA</li><li>Entity Framework Core</li><li>Flyway</li>
         </ul>
       </div>
       <div class="skill-cat">
-        <h3 class="skill-cat-name"># DevOps</h3>
+        <h3 class="skill-cat-name"># DevOps et observabilité</h3>
         <ul class="skill-list">
-          <li>Git</li><li>GitLab CI/CD</li><li>Docker</li><li>Maven</li>
+          <li>Git</li><li>GitLab CI/CD</li><li>Docker</li><li>Docker Compose</li><li>Maven</li>
+          <li>OpenTelemetry</li><li>Prometheus</li><li>Grafana</li><li>Loki / Tempo</li><li>Trivy</li>
         </ul>
       </div>
       <div class="skill-cat">
-        <h3 class="skill-cat-name"># Tests</h3>
+        <h3 class="skill-cat-name"># Tests et qualité</h3>
         <ul class="skill-list">
           <li>JUnit</li><li>Mockito</li><li>JaCoCo</li><li>SonarQube</li><li>Postman</li>
+          <li>Testcontainers</li><li>Vitest</li><li>Playwright</li>
         </ul>
       </div>
       <div class="skill-cat">
         <h3 class="skill-cat-name"># Méthodes</h3>
         <ul class="skill-list">
           <li>Scrum</li><li>Jira</li><li>Git Flow</li>
+          <li>Architecture distribuée</li><li>Gestion de concurrence</li><li>Idempotence</li>
         </ul>
       </div>
     </div>

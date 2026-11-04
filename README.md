@@ -11,8 +11,11 @@ Je cherche un stage de 6 mois en développement full stack.
 
 ## Ce que contient ce portfolio
 
-Trois projets présentés en détail, avec captures d'écran :
+Quatre projets présentés en détail, avec captures d'écran :
 
+- **Qwish** · Marketplace multivendeur conçue et développée seul, d’avril à novembre 2026.
+  Projet personnel en cours de développement : microservices, interfaces client/vendeur/admin,
+  tests automatisés et chaîne de validation GitLab.
 - **OllMark** · Studio de création de contenus marketing intégré à la
   plateforme e-commerce Ollca.
 - **AGORA** · Plateforme web de jeux de société en ligne en temps réel.
