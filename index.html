@@ -168,13 +168,13 @@
             <p class="project-period">Avr. 2026 – Nov. 2026<br><strong>En cours de développement</strong></p>
           </div>
           <p class="project-context">
-            Marketplace multivendeur couvrant le <strong>catalogue, la recherche de produits, le panier et le suivi des commandes</strong>.
-            Projet individuel associant une architecture de microservices à une application web Next.js,
-            avec authentification centralisée et validation automatisée.
+            Marketplace multivendeur basée sur une <strong>architecture microservices</strong>, couvrant le catalogue, la recherche de produits, le panier et le suivi des commandes.
+            Le backend comprend cinq services métier Spring Boot exposés via une API Gateway.
+            L’interface web est développée avec Next.js et React.
           </p>
           <p class="scope-label">Réalisations</p>
           <ul class="scope">
-            <li><strong>Architecture distribuée en Java 21 et Spring Boot 4</strong> : cinq services métier (utilisateurs, catalogue, panier, commandes et avis) accessibles via un point d’entrée Spring Cloud Gateway.</li>
+            <li><strong>Architecture microservices en Java 21 et Spring Boot 4</strong> : cinq services métier (utilisateurs, catalogue, panier, commandes et avis) accessibles via un point d’entrée Spring Cloud Gateway.</li>
             <li><strong>Stockage adapté à chaque domaine</strong> : quatre bases PostgreSQL dédiées aux domaines métier, Redis pour le panier, Elasticsearch pour la recherche et MinIO pour les images du catalogue.</li>
             <li><strong>Interfaces Next.js et React avec rendu serveur</strong> : parcours client, gestion vendeur et administration, huit langues dont l’arabe avec affichage de droite à gauche, et sélection de la devise.</li>
             <li><strong>Authentification et autorisations par rôle</strong> : Keycloak et OpenID Connect avec Auth.js côté web, validation des JWT et contrôles d’accès Spring Security côté backend.</li>
