@@ -168,18 +168,18 @@
             <p class="project-period">Avr. 2026 – Nov. 2026<br><strong>En cours de développement</strong></p>
           </div>
           <p class="project-context">
-            Marketplace multivendeur basée sur une <strong>architecture microservices</strong>, couvrant le catalogue, la recherche de produits, le panier et le suivi des commandes.
-            Le backend comprend cinq services métier Spring Boot exposés via une API Gateway.
-            L’interface web est développée avec Next.js et React.
+            Marketplace multivendeur en <strong>architecture microservices</strong> : cinq services métier Spring Boot et une API Gateway, soit six applications backend.
+            Le frontend Next.js et React propose les parcours d’achat ainsi que les espaces vendeur et administrateur.
           </p>
           <p class="scope-label">Réalisations</p>
           <ul class="scope">
-            <li><strong>Architecture microservices en Java 21 et Spring Boot 4</strong> : cinq services métier (utilisateurs, catalogue, panier, commandes et avis) accessibles via un point d’entrée Spring Cloud Gateway.</li>
-            <li><strong>Stockage adapté à chaque domaine</strong> : quatre bases PostgreSQL dédiées aux domaines métier, Redis pour le panier, Elasticsearch pour la recherche et MinIO pour les images du catalogue.</li>
-            <li><strong>Interfaces Next.js et React avec rendu serveur</strong> : parcours client, gestion vendeur et administration, huit langues dont l’arabe avec affichage de droite à gauche, et sélection de la devise.</li>
-            <li><strong>Authentification et autorisations par rôle</strong> : Keycloak et OpenID Connect avec Auth.js côté web, validation des JWT et contrôles d’accès Spring Security côté backend.</li>
-            <li><strong>Fiabilité du cycle de commande</strong> : checkout idempotent avec paiement simulé, gestion concurrente du stock et reprise des opérations de stock interrompues. Publication d’événements de commande avec RabbitMQ.</li>
-            <li><strong>Validation automatisée et observabilité</strong> : tests unitaires, d’intégration et E2E avec JUnit, Testcontainers, Vitest et Playwright ; CI GitLab, SonarQube et analyse des images Docker avec Trivy ; traces et métriques avec OpenTelemetry, Prometheus et Grafana.</li>
+            <li><strong>Backend Java 21 et Spring Boot 4</strong> : services utilisateurs, catalogue, panier, commandes et avis. Spring Cloud Gateway assure le routage, la limitation du débit et les circuit breakers.</li>
+            <li><strong>Persistance par domaine</strong> : quatre bases PostgreSQL séparées pour les utilisateurs, le catalogue, les commandes et les avis, avec migrations Flyway. Redis pour le panier, Elasticsearch pour la recherche et MinIO pour les images.</li>
+            <li><strong>Frontend Next.js 16 et React 19 avec rendu serveur</strong> : interfaces responsive, huit langues et sélections distinctes de la langue, du pays et de la devise. Assistant de navigation connecté au catalogue.</li>
+            <li><strong>Gestion des identités et des droits</strong> : Keycloak, OpenID Connect et Auth.js ; validation des JWT et autorisations Spring Security côté backend. Journal privé des actions sur les comptes et protection du dernier administrateur actif.</li>
+            <li><strong>Cycle de commande et gestion du stock</strong> : checkout idempotent avec paiement simulé, contrôles de concurrence et journal de reprise des opérations de stock. Publication d’événements de commande vers RabbitMQ après validation en base.</li>
+            <li><strong>Validation automatisée</strong> : tests unitaires, d’intégration et E2E avec JUnit, Testcontainers, Vitest et Playwright. Pipelines GitLab pour compiler, tester, analyser avec SonarQube, construire les images Docker et les scanner avec Trivy.</li>
+            <li><strong>Observabilité</strong> : traces OpenTelemetry dans Tempo, métriques Prometheus et logs Loki consultables dans Grafana. Infrastructure locale définie avec Docker Compose.</li>
           </ul>
           <div class="stack">
             <span class="chip">Java 21</span>
@@ -200,41 +200,62 @@
           <div class="gallery" data-gallery="qwish">
             <div class="gallery-head">
               <p class="gallery-label">Captures</p>
-              <p class="gallery-count">11 captures</p>
+              <p class="gallery-count">18 captures</p>
             </div>
             <div class="gallery-track">
-              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/v3/01-catalogue.jpg" data-title="Catalogue et recherche" data-desc="Catalogue filtrable par catégorie, prix, disponibilité et avis. La recherche et les filtres s’appuient sur Elasticsearch.">
-                <img src="assets/img/qwish/v3/thumbs/01-catalogue.jpg" width="1600" height="1000" alt="Qwish, catalogue et recherche" loading="lazy" decoding="async">
+              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/v4/01-catalogue.jpg" data-title="Catalogue et recherche" data-desc="Catalogue de démonstration filtrable par catégorie, prix, état, avis, marque et disponibilité. Recherche et filtres indexés dans Elasticsearch.">
+                <img src="assets/img/qwish/v4/thumbs/01-catalogue.jpg" width="1600" height="1040" alt="Qwish, Catalogue et recherche" loading="lazy" decoding="async">
               </button>
-              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/v3/02-fiche-produit.jpg" data-title="Fiche produit" data-desc="Description, prix en euros, stock, vendeur et actions d’achat dans l’espace client.">
-                <img src="assets/img/qwish/v3/thumbs/02-fiche-produit.jpg" width="1152" height="696" alt="Qwish, fiche produit" loading="lazy" decoding="async">
+              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/v4/02-fiche-produit.jpg" data-title="Fiche produit" data-desc="Visuel, description, prix en euros, stock et vendeur. Accès au panier, aux favoris et aux alertes de prix depuis la fiche produit.">
+                <img src="assets/img/qwish/v4/thumbs/02-fiche-produit.jpg" width="1120" height="664" alt="Qwish, Fiche produit" loading="lazy" decoding="async">
               </button>
-              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/v3/08-comparateur.jpg" data-title="Comparateur de produits" data-desc="Comparaison des prix, marques, états, notes et disponibilités de plusieurs produits.">
-                <img src="assets/img/qwish/v3/thumbs/08-comparateur.jpg" width="1280" height="990" alt="Qwish, comparateur de produits" loading="lazy" decoding="async">
+              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/v4/03-comparateur.jpg" data-title="Comparateur de produits" data-desc="Comparaison de deux références du catalogue : prix, marque, état, note et disponibilité.">
+                <img src="assets/img/qwish/v4/thumbs/03-comparateur.jpg" width="1280" height="1020" alt="Qwish, Comparateur de produits" loading="lazy" decoding="async">
               </button>
-              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/v3/09-panier.jpg" data-title="Panier et récapitulatif" data-desc="Panier avec gestion des quantités, total et accès au parcours de commande. Les montants sont affichés dans la devise choisie.">
-                <img src="assets/img/qwish/v3/thumbs/09-panier.jpg" width="1024" height="376" alt="Qwish, panier et récapitulatif de commande" loading="lazy" decoding="async">
+              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/v4/04-panier.jpg" data-title="Panier et récapitulatif" data-desc="Gestion des quantités et récapitulatif avant commande, sur deux produits de démonstration.">
+                <img src="assets/img/qwish/v4/thumbs/04-panier.jpg" width="1024" height="376" alt="Qwish, Panier et récapitulatif" loading="lazy" decoding="async">
               </button>
-              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/v3/03-catalogue-mobile.jpg" data-title="Navigation sur mobile" data-desc="Catalogue et navigation adaptés aux écrans mobiles.">
-                <img src="assets/img/qwish/v3/thumbs/03-catalogue-mobile.jpg" width="430" height="932" alt="Qwish, navigation sur mobile" loading="lazy" decoding="async">
+              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/v4/05-navigation-mobile.jpg" data-title="Navigation sur mobile" data-desc="Navigation, catalogue et sélections de produits adaptés aux écrans mobiles.">
+                <img src="assets/img/qwish/v4/thumbs/05-navigation-mobile.jpg" width="430" height="932" alt="Qwish, Navigation sur mobile" loading="lazy" decoding="async">
               </button>
-              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/v3/10-mode-sombre.jpg" data-title="Mode sombre" data-desc="Thème sombre appliqué à la fiche produit et aux contrôles d’achat, avec mémorisation du choix.">
-                <img src="assets/img/qwish/v3/thumbs/10-mode-sombre.jpg" width="1120" height="632" alt="Qwish, fiche produit en mode sombre" loading="lazy" decoding="async">
+              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/v4/06-mode-sombre.jpg" data-title="Mode sombre" data-desc="Fiche produit en thème sombre : informations du catalogue, stock et contrôles d’achat. Le choix du thème est mémorisé.">
+                <img src="assets/img/qwish/v4/thumbs/06-mode-sombre.jpg" width="1120" height="632" alt="Qwish, Mode sombre" loading="lazy" decoding="async">
               </button>
-              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/v3/11-interface-arabe.jpg" data-title="Internationalisation et écriture de droite à gauche" data-desc="Interface en arabe avec mise en page de droite à gauche et prix en riyals saoudiens après sélection de l’Arabie saoudite.">
-                <img src="assets/img/qwish/v3/thumbs/11-interface-arabe.jpg" width="1600" height="740" alt="Qwish, interface arabe avec écriture de droite à gauche" loading="lazy" decoding="async">
+              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/v4/07-interface-anglaise.jpg" data-title="Interface anglaise et devise" data-desc="Interface en anglais, Royaume-Uni sélectionné et prix converti en livres sterling. La langue, le pays et la devise disposent de sélections distinctes.">
+                <img src="assets/img/qwish/v4/thumbs/07-interface-anglaise.jpg" width="1600" height="900" alt="Qwish, Interface anglaise et devise" loading="lazy" decoding="async">
               </button>
-              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/v3/04-espace-vendeur.jpg" data-title="Gestion du catalogue vendeur" data-desc="Gestion des produits, prix, stocks et statuts dans l’espace vendeur, sur un catalogue de démonstration.">
-                <img src="assets/img/qwish/v3/thumbs/04-espace-vendeur.jpg" width="1280" height="883" alt="Qwish, gestion du catalogue vendeur" loading="lazy" decoding="async">
+              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/v4/08-assistant-catalogue.jpg" data-title="Assistant de recherche" data-desc="Assistant conversationnel de navigation : recherche dans le catalogue réel de la démonstration, prix, disponibilité et liens vers les produits.">
+                <img src="assets/img/qwish/v4/thumbs/08-assistant-catalogue.jpg" width="1440" height="960" alt="Qwish, Assistant de recherche" loading="lazy" decoding="async">
               </button>
-              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/v2/05-administration.jpg" data-title="Administration du catalogue" data-desc="Gestion des catégories et sous-catégories dans l’espace administrateur, sur des données de démonstration.">
-                <img src="assets/img/qwish/v2/thumbs/05-administration.jpg" width="1280" height="883" alt="Qwish, administration des catégories du catalogue" loading="lazy" decoding="async">
+              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/v4/09-assistant-mobile.jpg" data-title="Assistant sur mobile" data-desc="Recherche de produits et conversation dans une interface adaptée au mobile, avec images, prix et accès aux résultats.">
+                <img src="assets/img/qwish/v4/thumbs/09-assistant-mobile.jpg" width="390" height="844" alt="Qwish, Assistant sur mobile" loading="lazy" decoding="async">
               </button>
-              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/v2/06-pipeline-gitlab.jpg" data-title="Pipeline GitLab CI" data-desc="Extrait de la pipeline backend : compilation, tests, analyse SonarQube et construction des six images applicatives, correspondant à la Gateway et aux cinq services métier.">
-                <img src="assets/img/qwish/v2/thumbs/06-pipeline-gitlab.jpg" width="1448" height="198" alt="Qwish, pipeline GitLab CI" loading="lazy" decoding="async">
+              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/v4/10-catalogue-vendeur.jpg" data-title="Gestion du catalogue vendeur" data-desc="Espace vendeur : produits de démonstration, références, prix, stocks, statuts et accès aux actions de gestion.">
+                <img src="assets/img/qwish/v4/thumbs/10-catalogue-vendeur.jpg" width="1280" height="923" alt="Qwish, Gestion du catalogue vendeur" loading="lazy" decoding="async">
               </button>
-              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/v2/07-qualite-sonarqube.jpg" data-title="Qualité du backend" data-desc="Extrait du rapport backend SonarQube : Quality Gate validée, aucune nouvelle anomalie et couverture de 94,7 % sur le nouveau code de la période analysée.">
-                <img src="assets/img/qwish/v2/thumbs/07-qualite-sonarqube.jpg" width="1153" height="578" alt="Qwish, qualité du backend" loading="lazy" decoding="async">
+              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/v4/11-tableau-de-bord-admin.jpg" data-title="Tableau de bord administrateur" data-desc="Synthèse des comptes, catégories, produits et commandes, avec accès aux commandes par statut. Compteurs issus des données de démonstration.">
+                <img src="assets/img/qwish/v4/thumbs/11-tableau-de-bord-admin.jpg" width="1024" height="349" alt="Qwish, Tableau de bord administrateur" loading="lazy" decoding="async">
+              </button>
+              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/v4/12-administration-categories.jpg" data-title="Administration des catégories" data-desc="Gestion de la hiérarchie des catégories et sous-catégories du catalogue de démonstration.">
+                <img src="assets/img/qwish/v4/thumbs/12-administration-categories.jpg" width="1280" height="983" alt="Qwish, Administration des catégories" loading="lazy" decoding="async">
+              </button>
+              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/v4/13-moderation-produits.jpg" data-title="Modération des produits" data-desc="Recherche et filtrage administratif par statut, consultation du stock et accès aux actions de modération du catalogue.">
+                <img src="assets/img/qwish/v4/thumbs/13-moderation-produits.jpg" width="1280" height="443" alt="Qwish, Modération des produits" loading="lazy" decoding="async">
+              </button>
+              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/v4/14-pipeline-backend.jpg" data-title="Pipeline GitLab du backend" data-desc="Pipeline validée le 6 novembre 2026 : compilation, 1 147 cas de test rapportés, intégration, SonarQube et construction des six images backend.">
+                <img src="assets/img/qwish/v4/thumbs/14-pipeline-backend.jpg" width="1448" height="198" alt="Qwish, Pipeline GitLab du backend" loading="lazy" decoding="async">
+              </button>
+              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/v4/15-pipeline-frontend.jpg" data-title="Pipeline GitLab du frontend" data-desc="Pipeline validée le 6 novembre 2026 : lint, 1 443 cas de test rapportés par GitLab, build Next.js, analyse SonarQube et image Docker.">
+                <img src="assets/img/qwish/v4/thumbs/15-pipeline-frontend.jpg" width="1150" height="242" alt="Qwish, Pipeline GitLab du frontend" loading="lazy" decoding="async">
+              </button>
+              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/v4/16-qualite-backend.jpg" data-title="Qualité du backend" data-desc="Analyse du 6 novembre 2026 : Quality Gate validée et couverture de 95,6 % sur le nouveau code de la période analysée.">
+                <img src="assets/img/qwish/v4/thumbs/16-qualite-backend.jpg" width="1153" height="578" alt="Qwish, Qualité du backend" loading="lazy" decoding="async">
+              </button>
+              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/v4/17-qualite-frontend.jpg" data-title="Qualité du frontend" data-desc="Analyse du 6 novembre 2026 : Quality Gate validée et couverture de 89,5 % sur le nouveau code de la période analysée.">
+                <img src="assets/img/qwish/v4/thumbs/17-qualite-frontend.jpg" width="1153" height="578" alt="Qwish, Qualité du frontend" loading="lazy" decoding="async">
+              </button>
+              <button class="gallery-thumb" type="button" data-full="assets/img/qwish/v4/18-preferences-confidentialite.jpg" data-title="Préférences de confidentialité" data-desc="Choix des cookies et de la personnalisation facultative : fonctions nécessaires expliquées, refus, acceptation et enregistrement des préférences.">
+                <img src="assets/img/qwish/v4/thumbs/18-preferences-confidentialite.jpg" width="1440" height="1000" alt="Qwish, Préférences de confidentialité" loading="lazy" decoding="async">
               </button>
             </div>
           </div>
