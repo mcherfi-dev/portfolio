@@ -16,7 +16,7 @@ Quatre projets présentés en détail, avec captures d'écran :
 - **Qwish** · Marketplace multivendeur conçue et développée seul, d’avril à novembre 2026.
   Projet personnel en cours de développement : microservices, interfaces client/vendeur/admin,
   cinq services métier Spring Boot et une Gateway, frontend Next.js/React, tests automatisés
-  et chaîne de validation GitLab. La galerie comprend 18 captures actualisées le 6 novembre 2026,
+  et chaîne de validation GitLab. La galerie comprend 19 captures vérifiées le 7 novembre 2026,
   dont les espaces vendeur et administrateur, l’assistant et les analyses CI/SonarQube.
 - **OllMark** · Studio de création de contenus marketing intégré à la
   plateforme e-commerce Ollca.
